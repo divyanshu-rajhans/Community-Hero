@@ -575,11 +575,11 @@ export default function MapView({ initialReports = [] }: MapViewProps) {
             onCameraChanged={(ev) => setMapCenter(ev.detail.center)}
           >
             <MarkersLayer
-              clusters={clusters}
-              selectedId={selectedClusterId}
-              onSelect={setSelectedClusterId}
-              onStatusChange={handleStatusChange}
-            />
+                clusters={clusters}
+                selectedId={selectedClusterId}
+                onSelect={setSelectedClusterId}
+                onStatusChange={handleStatusChange}
+              />
           </Map>
         </APIProvider>
       </div>
